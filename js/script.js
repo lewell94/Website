@@ -20,6 +20,10 @@ $(function(){
 		$('.contact-box').addClass('hide')
 		contentElem = $(this).next();
 		$(contentElem).fadeIn(600);
+		var innerContent = $(contentElem).children('.inner-content')
+		var innerHeight = $(innerContent).height();
+		var contentHeight = innerHeight + 60;
+		$(contentElem).height(contentHeight);
 	})
 	//Close
 	$('.close-link').click(function(){

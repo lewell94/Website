@@ -87,10 +87,6 @@ header {
 	background: white;
 }
 
-.login {
-	height: 1015px;
-}
-
 #wrapper { 
 	width: 98%;
 	height: 500px;
@@ -124,16 +120,8 @@ header {
 	height: 1000px;
 }
 
-.teen {
-	height: 950px;
-}
-
 .teen .inner-content #wrapper #scaled-frame {
 	height: 1923px;
-}
-
-.mlm {
-	height: 978px;
 }
 
 .mlm .inner-content #wrapper {
@@ -142,10 +130,6 @@ header {
 
 .mlm .inner-content #wrapper #scaled-frame {
 	height: 1600px;
-}
-
-.artist {
-	height: 870px;
 }
 
 @-moz-document url-prefix() {
@@ -170,10 +154,6 @@ header {
 	.artist .inner-content #wrapper #scaled-frame {
 		height: 700px;
 	}
-}
-
-.codepen {
-	height: 1020px;
 }
 
 .border {
