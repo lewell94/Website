@@ -156,6 +156,40 @@ header {
 	}
 }
 
+.expand, .close {
+	background-color: rgba(182, 182, 182, 0.6);
+	color: white;
+	padding: 5px;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.7em;
+}
+
+.expand {
+	position: relative;
+	width: 46px;
+}
+
+.expand:hover, .close:hover {
+	background-color: rgba(182, 182, 182, 0.3);
+	cursor: pointer;
+}
+
+.close {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 39px;
+}
+
+#full-frame {
+	width: 100%;
+}
+
+#full-frame iframe {
+	width: 100%;
+}
+
 .border {
 	border-right: 1px #333333 solid
 }

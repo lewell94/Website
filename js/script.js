@@ -13,7 +13,7 @@ $(function(){
 	$('.contact-box').height(boxHeight);
 	//Tooltip
 	$('.icons').tooltip();
-	//Open
+	//Open Boxes
 	$('.box').click(function(){
 		boxElem = document.getElementsByClassName('box');
 		$(boxElem).addClass('hide');
@@ -25,7 +25,32 @@ $(function(){
 		var contentHeight = innerHeight + 60;
 		$(contentElem).height(contentHeight);
 	})
-	//Close
+	//Expand iframe
+	$('.expand').click(function(){
+		$('header').hide();
+		$('.container').hide();
+		var iframe = $(this).prev();
+		var src = $(iframe).attr('src');
+		var frameborder = 0;
+		var iframeElem = document.createElement('iframe');
+		iframeElem.setAttribute('src', src);
+		iframeElem.setAttribute('frameborder', frameborder);
+		iframeElem.setAttribute('id', 'expanded-iframe')
+		var div = document.getElementById('full-frame');
+		div.appendChild(iframeElem);
+		$(iframeElem).height(windowHeight);
+		$('.close').removeClass('hide')
+	})
+	//Close iframe
+	$('.close').click(function(){
+		var div = document.getElementById('full-frame');
+		var iframe = document.getElementById('expanded-iframe');
+		div.removeChild(iframe);
+		$(this).addClass('hide')
+		$('header').show();
+		$('.container').show();
+	})
+	//Close Boxes
 	$('.close-link').click(function(){
 		$(contentElem).fadeOut(400);
 		setTimeout(function(){
