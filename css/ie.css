@@ -1,0 +1,15 @@
+#scaled-frame {
+	width: 245%;
+}
+
+.teen .inner-content #wrapper #scaled-frame {
+	height: 1253px;
+}
+
+.mlm .inner-content #wrapper #scaled-frame {
+	height: 1000px;
+}
+
+.artist .inner-content #wrapper #scaled-frame {
+	height: 1200px;
+}
