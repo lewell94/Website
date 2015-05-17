@@ -156,20 +156,22 @@ header {
 	}
 }
 
-html[data-useragent*='MSIE 10.0'] #scaled-frame {
-	width: 245%;
-}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+	#scaled-frame {
+		width: 245%;
+	}
 
-html[data-useragent*='MSIE 10.0'] .teen .inner-content #wrapper #scaled-frame {
-	height: 1253px;
-}
+	.container .row .teen .inner-content #wrapper #scaled-frame {
+		height: 1253px;
+	}
 
-html[data-useragent*='MSIE 10.0'] .mlm .inner-content #wrapper #scaled-frame {
-	height: 1000px;
-}
+	.mlm .inner-content #wrapper #scaled-frame {
+		height: 1000px;
+	}
 
-html[data-useragent*='MSIE 10.0'] .artist .inner-content #wrapper #scaled-frame {
-	height: 1200px;
+	.artist .inner-content #wrapper #scaled-frame {
+		height: 1200px;
+	} 
 }
 
 .expand, .close {

@@ -2,9 +2,6 @@ var windowHeight = $(window).height();
 var windowWidth = $(window).width();
 var boxHeight = windowHeight / 3;
 $(function(){
-	//IE10
-	var doc = document.documentElement;
-	doc.setAttribute('data-useragent', navigator.userAgent);
 	//Box Height
 	$(window).resize(function(){
 		var windowHeight = $(window).height();
